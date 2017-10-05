@@ -29,6 +29,6 @@ do {
 	static int i=1;
 	i=i+2;
 	cout << i << endl;
-}while (max > i);
+}while (max < i);
  return 0;
 }
