@@ -22,7 +22,7 @@ cout << " THE VALUE STORED AT ptr1 = " << *ptr1 << endl;
 
 ptr1=arr;
 max=sizeof(arr)/sizeof(*arr);
-while(inc<max){
+while (inc<max){
 arr[inc]=inc;
 
 cout << " THE VALUE STORED OF arr [ " << inc << " ] = " << arr[inc] << endl;	
