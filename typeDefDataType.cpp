@@ -4,7 +4,7 @@ using namespace std;
 
           
 int main(){
-typedef int Integer;
+typedef int  Integer;
 typedef int* IntPtr;
 Integer x;
 x=5;
