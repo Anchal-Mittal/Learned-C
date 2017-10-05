@@ -10,7 +10,7 @@ int arr[5],max, inc=0;
 	//ASSIGNING THE ADDRESS TO THE POINTER
 	
 ptr = &num;
-ptr = NULL;	
+ptr1 = NULL;	
 cout << " THE VALUE STORED AT ptr = " << *ptr << endl;	
 	
 	//NULL POINTER 
