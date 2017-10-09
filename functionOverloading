@@ -1,0 +1,40 @@
+#include<iostream>
+
+using namespace std;
+
+float add(float num1, float num2){
+return(num1 +num2);
+}
+
+//float add(int num1, int num2){
+//return(num1 +num2);
+//}
+
+int add(int num1 , int num2){
+	return(num1 +num2);
+}
+
+int main(){
+int inum1 =8;
+int inum2=7;
+float fnum1=4.03;
+float fnum2=2.01;
+int iresult;	
+float fresult;	
+
+fresult=add(fnum1,fnum2);
+cout <<	fresult << endl;
+
+fresult=add(inum1,inum2);
+cout <<	fresult << endl;
+
+fresult=add(fnum1,inum2);
+cout <<	fresult << endl;	
+
+iresult=add(fnum1,inum2);
+cout <<	fresult << endl;	
+
+iresult=add(inum1,inum2);
+cout <<	iresult << endl;
+return 0;	
+}
