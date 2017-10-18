@@ -1,0 +1,54 @@
+#include <iostream>
+
+using namespace std;
+
+// DEFINATION OF FIRST_NAMESPACE 
+
+namespace first_namespace{
+	void operation(int num1, int num2){
+	 cout << (num1 + num2) << endl;
+		   }
+}
+
+// DEFINATION OF FIRST_NAMESPACE
+
+ namespace second_namespace{
+	void operation(int num1, int num2){
+  	cout << (num1 - num2) << endl;
+		   }	
+}	
+
+// DEFINATION OF NESTED NAMESPACE
+
+namespace third_namespace{
+	void operation(int num1, int num2){
+  	cout << (num1 * num2) << endl;
+	}
+	namespace forth_namespace{
+			void operation(int num1, int num2){
+	      cout <<(num1 / num2) <<endl;
+		   }
+	}
+}
+  
+//MAIN FUNCTION
+
+int main(){
+int num1=9;
+int num2=3;
+  
+ // CALLING OPERATION FUNCTION OF FIRST_NAMESPACE 	
+first_namespace ::operation( num1 ,num2);
+	
+ // CALLING OPERATION FUNCTION OF SECOND_NAMESPACE 
+second_namespace :: operation( num1 , num2);
+	
+ // CALLING OPERATION FUNCTION OF THIRD_NAMESPACE 
+third_namespace  :: operation( num1 , num2);
+	
+
+ // CALLING OPERATION FUNCTION OF FORTH_NAMESPACE NESTED IN THIRD_NAMESPACE 
+using namespace third_namespace :: forth_namespace ;
+operation(num1 ,num2);
+return 0;
+}
