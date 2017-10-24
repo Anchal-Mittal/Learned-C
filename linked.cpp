@@ -18,8 +18,20 @@ Node *tail;
 void insertion(int e);
 }
 
+void Link :: insertion(int e){
+	Node nd= new Node(e);
+	if(head == NULL){
+		head= tail= nd;
+	}
+	else{
+		tail->next= nd;
+		tail=tail->next;
+	}
+		
+}
 int main()
 {
 Link n;
+n.insertion(5);
 
 }
