@@ -6,7 +6,7 @@ int main(){
 	short shortvar;
 	int intvar;
 	long longvar;	
-	unsigned char unsign_char_var;
+	unsigned char unsignCharVar;
 	signed char sign_char_var;
 	unsigned int unsign_int;
 	signed int sign_int_var;
