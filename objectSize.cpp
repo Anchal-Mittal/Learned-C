@@ -21,7 +21,6 @@ class DerivedClass: public Empty{
 	public :
 	int var1;
 	double var2;
-	float var3;
 	char var4;
 	
 };
