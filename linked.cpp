@@ -1,7 +1,9 @@
 #include<iostream.h>
 class Node{
-  int ele; 
-  Node *next;
+	
+ 	int ele; 
+ 	public:   //constructor should be public
+	Node *next;
   Node(int e , Node * n =0){
 	ele = e;
 	next = n;
@@ -11,6 +13,7 @@ class Node{
 class Link{
 Node *head;
 Node *tail;
+ public:
  Link(){
   head =0;
   tail= 0;
