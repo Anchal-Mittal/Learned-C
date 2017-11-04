@@ -1,25 +1,40 @@
-#include<iostream.h>
+#include <iostream>
+
+using namespace std;
+
 class Node{
-  int ele; 
-  Node *next;
-  Node(int e , Node * n =0){
-	ele = e;
-	next = n;
-  }
+	public:
+	int ele;
+	Node *next;
+	Node(int el,Node *n=0){
+		ele =el;
+		next =n;
+	}
+};
+
+class List{
+	public:
+	int el;
+	List *head;
+	List *tail;
+void insert(el);
+};
+
+void List:insert(int el){
+Node n =new(el);
+if(head==null)
+	head=tail=n;
+else if(head==tail){
+	tail->next=n;
+	tail=tail->next;
+	}	
 }
+int main(){
+int nodeElement;
 
-class Link{
-Node *head;
-Node *tail;
- Link(){
-  head =0;
-  tail= 0;
-  }
-void insertion(int e);
-}
-
-int main()
-{
-Link n;
-
+cout <<"ENTER TEH NODE  DO U WANT TO INSERT " << endl;
+cin >> nodeElement;
+List l;
+l.insert(nodeElement);
+return 0;
 }
