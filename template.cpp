@@ -24,8 +24,8 @@ return( result);
 
 int main(){
 
-T num1;
-T num2;
+<T int> num1;
+<T int> num2;
 cout << " ENTER THE NUM1 "<< endl;
 cin >> num1;
 
@@ -33,16 +33,16 @@ cout << " ENTER THE NUM2  "<< endl;
 cin >> num2;
 
 cout << "ADDITION OF TWO NUMBERS "<< endl;
-T result = add(num1 , num2);
+<T int> result = add <int>(num1 , num2);
 cout << result << endl ;
 
 
 cout << "SUBTRACTION OF TWO NUMBERS "<< endl;
-T result = sub(num1 , num2);
+<T float> result = sub<float>(num1 , num2);
 cout << result << endl ;
 
 cout << "MULTIPICATION OF TWO NUMBERS "<< endl;
-T result = multiply(num1 , num2);
+<T long>result = multiply <long>(num1 , num2);
 cout << result << endl ;
 
 return 0;
