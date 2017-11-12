@@ -24,26 +24,27 @@ return( result);
 
 int main(){
 
-<T int> num1;
-<T int> num2;
-cout << " ENTER THE NUM1 "<< endl;
+int num1;
+int  num2;
+cout << " ENTER THE NUM1  "<< endl;
 cin >> num1;
 
 cout << " ENTER THE NUM2  "<< endl;
 cin >> num2;
 
 cout << "ADDITION OF TWO NUMBERS "<< endl;
-<T int> result = add <int>(num1 , num2);
+int result = add <int>(num1 , num2);
 cout << result << endl ;
 
-
+cout << "USE TEMPLATE FOR ADDITION OF TWO FlOAT NUMBERS " <<add( 4.5,66.7) << endl;
 cout << "SUBTRACTION OF TWO NUMBERS "<< endl;
-<T float> result = sub<float>(num1 , num2);
-cout << result << endl ;
+float result1 = subtract <float>(num1 , num2);
+cout << result1 << endl ;
 
+cout <<"USE TEMPLATE FOR MULTIPCATION OF LONG  "<< multiply(38,7328) << endl;
 cout << "MULTIPICATION OF TWO NUMBERS "<< endl;
-<T long>result = multiply <long>(num1 , num2);
-cout << result << endl ;
+long result2 = multiply <long>(num1 , num2);
+cout << result2 << endl ;
 
 return 0;
 
