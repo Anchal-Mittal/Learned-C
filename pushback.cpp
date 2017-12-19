@@ -1,24 +1,16 @@
-#include <iostream>
-#include <vector>
-
+#include<iostream>
+#include<vector>
 using namespace std;
-
-int main()
-{
-vector <int> gquiz;
-int sum = 0;
-gquiz.push_back(10);
-gquiz.push_back(20);
-gquiz.push_back(30);
-
-while (!gquiz.empty())
-{
-	sum += gquiz.back();
-	gquiz.pop_back();
+int main(){
+int sum=0;    
+vector <int> v1;
+v1.push_back(10);
+v1.push_back(20);
+v1.push_back(30);
+while(!v1.empty()){
+     sum=sum+v1.back();
+     v1.pop_back();     
 }
-
-cout << "The sum of the elements of gquiz is : "
-	<< sum << '\n';
-
-return 0;
+cout << "THE SUM OF THE ELEMENT IS "<<sum<< endl;
+return 0;    
 }
